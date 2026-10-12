@@ -185,8 +185,6 @@ This is a large, genuinely full-featured implementation of every module in
 the assignment, but a couple of bonus items were intentionally kept light
 to stay honest about effort vs. a multi-week production build:
 
-- **Redis** isn't wired in yet (env var is present as a placeholder) —
-  the natural cache point is `GET /jobs`.
 - **AI resume matching** uses a deterministic skill-overlap heuristic
   (`server/services/aiMatchingService.js`) rather than an LLM call, with a
   documented async seam (`matchResumeToJobAsync`) to swap in a real model
